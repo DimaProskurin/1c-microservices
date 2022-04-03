@@ -1,12 +1,13 @@
 package ru.mipt1c.homework.tests.task1;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Пример сложного объекта для хранения.
  *
  */
-public class Student extends StudentKey {
+public class Student extends StudentKey implements Serializable {
     private final String hometown;
     private final Date birthDate;
     private final boolean hasDormitory;
